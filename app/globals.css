@@ -115,6 +115,12 @@ legend small { margin-left: 6px; color: var(--muted); font-weight: 400; }
 .card p, .card li { color: #454c56; font-size: 14px; line-height: 1.7; }
 .card ul { margin: 0; padding-left: 20px; }
 .card li + li { margin-top: 7px; }
+.tarot-grid { display: grid; gap: 10px; margin-bottom: 18px; }
+.tarot-card { min-height: 142px; padding: 17px; border: 1px solid rgba(255,255,255,.68); border-radius: 19px; background: linear-gradient(145deg,rgba(255,255,255,.7),rgba(213,220,232,.5)); box-shadow: 7px 7px 16px rgba(128,139,158,.16),-6px -6px 15px rgba(255,255,255,.72); }
+.tarot-card small { display: block; margin-bottom: 13px; color: var(--violet); font: 800 9px/1.25 Arial,sans-serif; letter-spacing: .05em; }
+.tarot-card b { display: block; font-size: 18px; letter-spacing: -.03em; }
+.tarot-card p { margin: 7px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.tarot-story { margin: 0; padding: 16px 17px; border-left: 3px solid var(--violet); border-radius: 0 14px 14px 0; background: rgba(255,255,255,.38); }
 .metric-grid { display: grid; gap: 18px; }
 .metrics > h2 { font: 900 15px/1 Arial, sans-serif; letter-spacing: .02em; }
 .metric { margin-top: 15px; }
@@ -149,5 +155,5 @@ td { font-size: 13px; }
 @keyframes breathe { 50% { transform: scale(.98); } }
 @keyframes pulse { 50% { opacity: .45; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
-@media (min-width: 720px) { .app { padding-bottom: 0; } .home { width: min(calc(100% - 64px), 920px); } .intro { padding-top: 72px; } .metric-grid { grid-template-columns: 1fr 1fr; } .bottom { display: none; } }
+@media (min-width: 720px) { .app { padding-bottom: 0; } .home { width: min(calc(100% - 64px), 920px); } .intro { padding-top: 72px; } .metric-grid, .tarot-grid { grid-template-columns: repeat(3,1fr); } .metric-grid { grid-template-columns: 1fr 1fr; } .bottom { display: none; } }
 @media (max-width: 374px) { .brand span, .header-spec span, .header-count small { display: none; } .person { padding-right: 18px; padding-left: 18px; } .module-id { margin-right: -18px; margin-left: -18px; } .orb { max-width: 78px; } .orb-a { left: -9px; } .orb-b { right: -9px; } }
